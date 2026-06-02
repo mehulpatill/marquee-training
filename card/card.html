@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin-left: 35%;
+            border-radius: 30px;
+            width: 500px;
+            height: 730px;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        .upper{
+            height: 400px;
+            background-color: #f0f0f0;
+            
+        }
+        .up{
+            background-color: blue;
+            border-radius: 20px 20px 0px 0px;
+            height:300px ;
+        }
+        .profile-pic{
+            background-color: #f0f0f0;
+            border: 6px solid blue;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin-left: 25%;
+            
+            margin-top: -200px;
+            padding: 5px; 
+    
+    
+    box-sizing: border-box; 
+        }
+        .photo{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            background-size: cover;
+            background-position: 30% 55%;
+            background-image: url('./modi.jpg');
+        }
+        .lower{
+            background-color: #f0f0f0;
+            height: 330px;
+            border-radius: 0px 0px 20px 20px;
+        }
+        .info{
+            background-color: #f0f0f0;
+            
+        }
+        .title{
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .description{
+            font-size: 20px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .media{
+            background-color: #f0f0f0;
+        
+
+            height: 70px;
+            margin-top: 10px;
+            margin-left: 100px;
+            margin-right: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .md{
+            height: 50px;
+            width: 50px;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        #facebook{
+            background-image: url('./facebook.png');
+            background-size: cover;
+            color: white;
+        }
+        #twitter{
+            background-image: url('./twitter.png');
+            color: white;
+            background-size:contain;
+            background-repeat: no-repeat;
+        }
+        #instagram{
+            background-image: url('./instagram.png');
+            background-size: cover;
+            color: white;
+        }
+        #youtube{
+            background-image: url('./youtube.png');
+            background-size: cover;
+            
+            color: white;
+        }
+        .actions{
+            background-color: #f0f0f0;
+            
+            
+            height: 78px;
+            margin-inline: 50px;
+            margin-top: -10;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        button{
+            margin: 0px;
+            height: 50px;
+            width: 150px;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            background-color: blue;
+            font-size: 18px;
+        }
+        .details{
+            background-color: #f0f0f0;
+    
+            height: 70px;
+            margin-inline: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        i{
+            font-size: 25px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="upper">
+            <div class="up"></div>
+            <div class="profile-pic">
+                <div class="photo">
+                </div>
+            </div>
+        </div>
+
+        <div class="lower">
+            <div class="info">
+                <div class="title">CodingLab</div>
+                <div class="description">YouTuber & Blogger</div>
+            </div>
+            <div class="media">
+                <div class="md" id="facebook"></div>
+                <div class="md" id="twitter"></div>
+                <div class="md" id="instagram"></div>
+                <div class="md" id="youtube"></div>
+
+            </div>
+            <div class="actions">
+                <button class="subscribe">Subscribe</button>
+                <button class="message">Message</button>
+
+            </div>
+            <div class="details">
+                <div class="likes">
+                    <i class="likes">👍</i>
+                    <span>60.4k</span>
+                </div>
+                <div class="comments">
+                    <i class="comments">💬</i>
+                    <span>20k</span>
+                </div>
+                <div class="share">
+                    <i class="share">↗️</i> 
+                    <span>12.4k</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
