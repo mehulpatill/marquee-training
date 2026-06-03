@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            background-color: rgb(167, 4, 167);
+            height: 700px;
+            width: 900px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .grid-box{
+            border-radius: 20px;
+            background-color: purple;
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #grid-item-5{
+            background-image: url("images/texture.png");
+        }
+        #grid-item-6 {
+            background-image: url("images/grid-7.jpeg");    
+            grid-row: 2/4;
+            grid-column: 3;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #grid-item-7 {
+            
+            grid-column: 1/3;
+        }
+
+        .upper{
+            diplay: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .up{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            color: white;
+        }
+        button{
+            margin-left: 10px;
+            /* padding: 5px 10px; */
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .down{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+    overflow: hidden; 
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.6); 
+    object-fit: cover; 
+    display: block; 
+}
+
+
+        .details{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .detail-up{
+            font-size: 90px;
+            color: white;
+        }
+        .detail-down{
+            font-size: 20px;
+            color: white;
+        }
+        #live{
+            background-color: red;
+            color: white;
+            border: none;
+            margin-left: 200px;
+        }
+
+        #details-item-4-up{
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }  
+        .grid-item-6-content{
+            /* display: flex; */
+           
+        }
+        #sub{
+            background-color: blue;
+            color: white;
+            border: none;
+            margin-left: 35px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <center>
+        <div class="grid-container">
+
+
+
+            <div class="grid-box" id="grid-item-1">
+                <div class="upper">
+                    <div class="up">
+                        <span>A complete family of apps</span>
+                        <button>Launch App -></button>
+                    </div>
+                    <div class="down">
+                        <div class="icon" id="youtube">
+                            <img src="./images/youtube.png" alt="" srcset="">
+                        </div>
+                        <div class="icon" id="twitter">
+                            <img src="./images/twitter.png" alt="" srcset="">
+                        </div>
+                        <div class="icon" id="tiktok">
+                            <img src="./images/tiktok.png" alt="" srcset="">
+                        </div>
+                        <div class="icon" id="instagram">
+                            <img src="./images/instagram.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="grid-box" id="grid-item-2">
+                <div class="details">
+                    <div class="detail-up">25K</div>
+                    <div class="detail-down">Weekly Users</div>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="grid-box" id="grid-item-3">
+                <div class="details">
+                    <button id="live">Live</button>
+                    <div class="detail-up">50K</div>
+                    <div class="detail-down">Weekly Viewers</div>
+                </div>
+            </div>
+
+
+
+
+            <div class="grid-box" id="grid-item-4">
+    <div class="details">
+        <div id="details-item-4-up">
+            <div>Active Users</div>
+            <div style="color: green; font-weight: bolder;">+154</div>
+        </div>
+        <div class="detail-up" style="margin-top: 20px;">1,538</div>
+    </div>
+</div>
+
+
+
+
+            <div class="grid-box" id="grid-item-5">
+                <div style="color: white; font-size: 50px;">
+                   Design
+                </div>
+            </div>
+
+
+
+            <div class="grid-box" id="grid-item-6">
+                <div class="grid-item-6-content">
+                    <span>Total Subscribers</span>
+                    <button id="sub">Subscribe</button>
+                </div>
+                <div style="color: black; font-size: 100px;">200K</div>
+            </div>
+
+
+
+            <div class="grid-box" id="grid-item-7">
+                <div style="font-size: 30px; color: white;">
+                    A place to learn UI Design & Web Design
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
